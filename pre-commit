@@ -1,0 +1,12 @@
+#!/usr/bin/python3
+
+
+import os
+import sys
+
+
+work_dir = os.getcwd()
+path_to_tests = os.path.join(work_dir, 'tests.py')
+if os.system('python3 ' + path_to_tests):
+    sys.exit(1)
+ 
